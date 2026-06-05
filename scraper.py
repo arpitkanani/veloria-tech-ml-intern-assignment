@@ -27,8 +27,10 @@ def get_match_list(team_code):
         print(f"  [ERROR] Could not fetch match list for {team_code}: {e}")
         return []
     
+    # read html easily by beautifulsoup
     soup = BeautifulSoup(res.content, 'html.parser')
     
+    # finding main table on team 1 vs everone
     match_table = soup.find("table", {"class": "TableLined"})
 
     if match_table is None:
@@ -36,6 +38,7 @@ def get_match_list(team_code):
         return []
     
 
+    #finds table rows as list 
     rows = match_table.find_all('tr') # type: ignore
 
     matches_list = []
@@ -47,7 +50,7 @@ def get_match_list(team_code):
         if len(matches_list) >= 10:
             break
         
-            
+        
         cells = row.find_all('td')
         
         # Safe check: Verify the row has all 6 columns before accessing indices

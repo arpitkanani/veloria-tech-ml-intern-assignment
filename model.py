@@ -61,7 +61,7 @@ df=df.sort_values("Date").reset_index(drop=True)
 df['day_of_week']=df['Date'].dt.dayofweek
 
 
-# make a new feature is team win on home ground or not 
+# create a new feature is team win on home ground or not 
 def is_home(team, venue):
     """Returns 1 if the team is playing at their home ground, else 0."""
     ground = HOME_GROUNDS.get(team, '')
@@ -114,12 +114,12 @@ df['top_scorer_freq'] = df['Top_Scorer'].map(freq_map)
 df.drop(columns=["Date","Team 1","Team 2","Venue","Result","Top_Scorer","Top_Score","winner"],inplace=True)
 
 
-df.to_csv("transformed_matches.csv",index=False)
+df.to_csv("transformed_match.csv",index=False)
 
 
 
 
-
+#Model Evaluation
 
 # separate independent and dependent variables
 X=df.drop(columns=["target"])
