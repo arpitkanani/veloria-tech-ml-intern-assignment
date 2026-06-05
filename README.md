@@ -37,6 +37,7 @@ here used sklearn library **Leave-One-Out Cross Validation(LOO-CV)** cause train
 Model accuracy:
 ![output image of model.py](image.png)
 
+
 | Metric | Score |
 |---|---|
 | Accuracy | 0.70 |
@@ -50,6 +51,9 @@ Predicted →    Team 2 win    Team 1 win
 Team 2 win  [     1              5     ]
 Team 1 win  [     1             13     ]
 ```
+
+###Output of scraper.py
+
 ---
 
 ## How to Run
