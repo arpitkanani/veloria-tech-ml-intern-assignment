@@ -104,7 +104,6 @@ python model.py
 
 ---
 
-- I want to try RAG approch but one last paper is near so i done two task initally but in my github repo I am learning and working on RAG app. 
 
 
 
