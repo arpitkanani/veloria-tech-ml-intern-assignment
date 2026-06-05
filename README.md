@@ -35,6 +35,8 @@ here used sklearn library **Leave-One-Out Cross Validation(LOO-CV)** cause train
 - where LOO-CV works as out of n samples take n-1 sample as train and tests on 1 , that repeats on n times.
 
 Model accuracy:
+
+
 ![output image of model.py](image.png)
 
 
@@ -52,8 +54,10 @@ Team 2 win  [     1              5     ]
 Team 1 win  [     1             13     ]
 ```
 
-###Output of scraper.py
+### Output of scraper.py
+
 ![scraper output](scraper_output.png)
+
 ---
 
 ## How to Run
