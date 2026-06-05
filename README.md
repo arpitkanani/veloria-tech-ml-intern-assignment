@@ -53,7 +53,7 @@ Team 1 win  [     1             13     ]
 ```
 
 ###Output of scraper.py
-
+![scraper output](scraper_output.png)
 ---
 
 ## How to Run
